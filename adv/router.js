@@ -3,7 +3,7 @@ const { Router } = require('express')
 const router = new Router()
 
 router.get(                                         //get all
-  './adv',
+  './advertisement',
   (req, res, next) => {
     Advertisement
     .findAll()
@@ -12,7 +12,7 @@ router.get(                                         //get all
 })
 
 router.get(                                          //get one
-  '/adv/:id',
+  '/advertisement/:id',
   (req, res, next) => {
     Advertisement
     .findByPk(req.params.id)
@@ -21,7 +21,7 @@ router.get(                                          //get one
 })
 
 router.post(                                        //create new
-  './adv',
+  './advertisement',
   (req, res, next) => {
     Advertisement
     .create(req.body)
