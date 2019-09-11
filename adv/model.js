@@ -33,8 +33,8 @@ const Advertisement = db.define(
     field: 'email',
     allowNull: false
   },
-  phonenumber:{
-    type: Sequelize.NUMBER,
+  phone_number:{
+    type: Sequelize.STRING,
     field: 'phone_number',
     allowNull: false
   }
