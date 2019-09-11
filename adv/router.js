@@ -1,5 +1,5 @@
 const { Router } = require('express')
-//const Advertisement = require('./model')
+const Advertisement = require('./model')
 const router = new Router()
 
 router.get(                                         //get all
