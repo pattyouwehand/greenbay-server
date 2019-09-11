@@ -5,7 +5,7 @@ const cors = require('cors')
 const corsMiddleware = cors()
 
 const bodyparser = require('body-parser')
-const parseMiddleware = bodyParser.json()
+const parseMiddleware = bodyparser.json()
 
 const db = require('./db')
 const Advertisement = require('./advertisement/model')
@@ -14,6 +14,8 @@ const port = 4000
 
 app.use(parseMiddleware)
 app.use(corsMiddleware)
+app.use(db)
+app.use(Advertisement)
 app.use(router)
 
 app.get('/test', (req, res) => res.send('Hello test!!'))
