@@ -3,7 +3,7 @@ const Advertisement = require('./model')
 const router = new Router()
 
 router.get(                                         //get all
-  './advertisement',
+  '/advertisement',
   (req, res, next) => {
     Advertisement
     .findAll()
@@ -21,7 +21,7 @@ router.get(                                          //get one
 })
 
 router.post(                                        //create new
-  './advertisement',
+  '/advertisement',
   (req, res, next) => {
     Advertisement
     .create(req.body)
