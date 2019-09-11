@@ -9,7 +9,7 @@ const Advertisement = db.define(
     allowNull: false
   },
   price:{
-    type:Sequelize.NUMBER,
+    type:Sequelize.INTEGER,
     field: 'price',
     allowNull: false
   },
@@ -33,9 +33,9 @@ const Advertisement = db.define(
     field: 'email',
     allowNull: false
   },
-  phone_number:{
+  phonenumber:{
     type: Sequelize.STRING,
-    field: 'phone_number',
+    field: 'phone',
     allowNull: false
   }
 })

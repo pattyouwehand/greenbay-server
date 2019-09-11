@@ -27,3 +27,5 @@ router.post(                                        //create new
     .create(req.body)
     .then(team => res.json(advertisement))
 })
+
+module.exports = router
